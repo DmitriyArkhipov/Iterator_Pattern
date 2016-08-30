@@ -13,6 +13,11 @@
 		81E375B21D756F9D00E4B68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E375B01D756F9D00E4B68F /* Main.storyboard */; };
 		81E375B41D756F9D00E4B68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E375B31D756F9D00E4B68F /* Assets.xcassets */; };
 		81E375B71D756F9D00E4B68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E375B51D756F9D00E4B68F /* LaunchScreen.storyboard */; };
+		81E375C11D756FCB00E4B68F /* ItemInShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375C01D756FCB00E4B68F /* ItemInShop.m */; };
+		81E375C41D7571CD00E4B68F /* ShopWarehouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375C31D7571CD00E4B68F /* ShopWarehouse.m */; };
+		81E375CA1D75739A00E4B68F /* BasicEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375C91D75739A00E4B68F /* BasicEnumerator.m */; };
+		81E375CD1D7574F900E4B68F /* BadItemsEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375CC1D7574F900E4B68F /* BadItemsEnumerator.m */; };
+		81E375D01D7578AD00E4B68F /* GoodItemsEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375CF1D7578AD00E4B68F /* GoodItemsEnumerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		81E375B31D756F9D00E4B68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E375B61D756F9D00E4B68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E375B81D756F9D00E4B68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E375BF1D756FCB00E4B68F /* ItemInShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInShop.h; sourceTree = "<group>"; };
+		81E375C01D756FCB00E4B68F /* ItemInShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemInShop.m; sourceTree = "<group>"; };
+		81E375C21D7571CD00E4B68F /* ShopWarehouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopWarehouse.h; sourceTree = "<group>"; };
+		81E375C31D7571CD00E4B68F /* ShopWarehouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopWarehouse.m; sourceTree = "<group>"; };
+		81E375C81D75739A00E4B68F /* BasicEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEnumerator.h; sourceTree = "<group>"; };
+		81E375C91D75739A00E4B68F /* BasicEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEnumerator.m; sourceTree = "<group>"; };
+		81E375CB1D7574F900E4B68F /* BadItemsEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadItemsEnumerator.h; sourceTree = "<group>"; };
+		81E375CC1D7574F900E4B68F /* BadItemsEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadItemsEnumerator.m; sourceTree = "<group>"; };
+		81E375CE1D7578AD00E4B68F /* GoodItemsEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodItemsEnumerator.h; sourceTree = "<group>"; };
+		81E375CF1D7578AD00E4B68F /* GoodItemsEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodItemsEnumerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 		81E375A61D756F9D00E4B68F /* iterator_pattern */ = {
 			isa = PBXGroup;
 			children = (
+				81E375BE1D756FA800E4B68F /* Model */,
 				81E375AA1D756F9D00E4B68F /* AppDelegate.h */,
 				81E375AB1D756F9D00E4B68F /* AppDelegate.m */,
 				81E375AD1D756F9D00E4B68F /* ViewController.h */,
@@ -77,6 +93,23 @@
 				81E375A81D756F9D00E4B68F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81E375BE1D756FA800E4B68F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81E375BF1D756FCB00E4B68F /* ItemInShop.h */,
+				81E375C01D756FCB00E4B68F /* ItemInShop.m */,
+				81E375C21D7571CD00E4B68F /* ShopWarehouse.h */,
+				81E375C31D7571CD00E4B68F /* ShopWarehouse.m */,
+				81E375C81D75739A00E4B68F /* BasicEnumerator.h */,
+				81E375C91D75739A00E4B68F /* BasicEnumerator.m */,
+				81E375CB1D7574F900E4B68F /* BadItemsEnumerator.h */,
+				81E375CC1D7574F900E4B68F /* BadItemsEnumerator.m */,
+				81E375CE1D7578AD00E4B68F /* GoodItemsEnumerator.h */,
+				81E375CF1D7578AD00E4B68F /* GoodItemsEnumerator.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +184,12 @@
 			files = (
 				81E375AF1D756F9D00E4B68F /* ViewController.m in Sources */,
 				81E375AC1D756F9D00E4B68F /* AppDelegate.m in Sources */,
+				81E375CA1D75739A00E4B68F /* BasicEnumerator.m in Sources */,
+				81E375D01D7578AD00E4B68F /* GoodItemsEnumerator.m in Sources */,
+				81E375C41D7571CD00E4B68F /* ShopWarehouse.m in Sources */,
 				81E375A91D756F9D00E4B68F /* main.m in Sources */,
+				81E375CD1D7574F900E4B68F /* BadItemsEnumerator.m in Sources */,
+				81E375C11D756FCB00E4B68F /* ItemInShop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

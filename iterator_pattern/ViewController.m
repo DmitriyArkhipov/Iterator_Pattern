@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ShopWarehouse.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    ShopWarehouse *shopWarehouse = [[ShopWarehouse alloc] init];
+    
+    ItemInShop *item0 = [[ItemInShop alloc] initWithName:@"Item0" quality:YES];
+    
+    ItemInShop *item1 = [[ItemInShop alloc] initWithName:@"Item1" quality:NO];
+    
+    ItemInShop *item2 = [[ItemInShop alloc] initWithName:@"Item2" quality:NO];
+    
+    ItemInShop *item3 = [[ItemInShop alloc] initWithName:@"Item3" quality:NO];
+    
+    ItemInShop *item4 = [[ItemInShop alloc] initWithName:@"Item4" quality:YES];
+    
+    ItemInShop *item5 = [[ItemInShop alloc] initWithName:@"Item5" quality:NO];
+    
+    [shopWarehouse addItem:item0];
+    [shopWarehouse addItem:item1];
+    [shopWarehouse addItem:item2];
+    [shopWarehouse addItem:item3];
+    [shopWarehouse addItem:item4];
+    [shopWarehouse addItem:item5];
+    
+    NSEnumerator *goodIterator = [shopWarehouse getGoodItemsEnumerator];
+    NSEnumerator *badIterator = [shopWarehouse  getBrokenItemsEnumerator];
+    
+    ItemInShop *element;
+    
+    while (element = [goodIterator nextObject]) {
+        NSLog(@"Good Item = %@", element.name);
+    }
+    
+    NSLog(@"=========================================");
+    
+    while (element = [badIterator nextObject]) {
+        NSLog(@"Bad Item = %@", element.name);
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
