@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ShopWarehouse.h"
+#import "ShopWarehouse+ShopWarehouseCollection.h"
 
 @interface ViewController ()
 
@@ -53,6 +54,36 @@
     NSLog(@"=========================================");
     
     while (element = [badIterator nextObject]) {
+        NSLog(@"Bad Item = %@", element.name);
+    }
+    
+    //дополнительно созданный итератор с расширенным функционалом :]
+    
+    NSLog(@"===========Collection Iterator===========");
+    
+    CollectionIterator *collectionIterator = [shopWarehouse getGoodItemsEnumeratorCollection];
+    
+    element = [collectionIterator currentObject];
+    NSLog(@"Collection Item = %@", element.name);
+    
+    element = [collectionIterator nextObject];
+    NSLog(@"Collection Item = %@", element.name);
+    
+    element = [collectionIterator currentObject];
+    NSLog(@"Collection Item = %@", element.name);
+    
+    element = [collectionIterator prevObject];
+    NSLog(@"Collection Item = %@", element.name);
+    
+    NSLog(@"=========================================");
+   
+    while (element = [collectionIterator nextObject]) {
+        NSLog(@"Bad Item = %@", element.name);
+    }
+    
+    NSLog(@"===========Collection reverse============");
+    
+    while ((element = [collectionIterator prevObject])) {
         NSLog(@"Bad Item = %@", element.name);
     }
     
