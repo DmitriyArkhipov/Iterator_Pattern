@@ -20,6 +20,7 @@
 		81E375D01D7578AD00E4B68F /* GoodItemsEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375CF1D7578AD00E4B68F /* GoodItemsEnumerator.m */; };
 		81E375D51D75BFF000E4B68F /* CollectionIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375D41D75BFF000E4B68F /* CollectionIterator.m */; };
 		81E375DD1D75D11F00E4B68F /* ShopWarehouse+ShopWarehouseCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E375DC1D75D11F00E4B68F /* ShopWarehouse+ShopWarehouseCollection.m */; };
+		81FCF8281D8B10C600A808BB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 81FCF8271D8B10C600A808BB /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		81E375D41D75BFF000E4B68F /* CollectionIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionIterator.m; sourceTree = "<group>"; };
 		81E375DB1D75D11F00E4B68F /* ShopWarehouse+ShopWarehouseCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShopWarehouse+ShopWarehouseCollection.h"; sourceTree = "<group>"; };
 		81E375DC1D75D11F00E4B68F /* ShopWarehouse+ShopWarehouseCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShopWarehouse+ShopWarehouseCollection.m"; sourceTree = "<group>"; };
+		81FCF8271D8B10C600A808BB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		81E3759B1D756F9D00E4B68F = {
 			isa = PBXGroup;
 			children = (
+				81FCF8271D8B10C600A808BB /* LICENSE */,
 				81E375A61D756F9D00E4B68F /* iterator_pattern */,
 				81E375A51D756F9D00E4B68F /* Products */,
 			);
@@ -189,6 +192,7 @@
 			files = (
 				81E375B71D756F9D00E4B68F /* LaunchScreen.storyboard in Resources */,
 				81E375B41D756F9D00E4B68F /* Assets.xcassets in Resources */,
+				81FCF8281D8B10C600A808BB /* LICENSE in Resources */,
 				81E375B21D756F9D00E4B68F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
